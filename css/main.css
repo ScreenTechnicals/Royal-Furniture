@@ -1,0 +1,341 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-sarief;
+	text-align: center;
+	/*overflow: hidden;*/
+}
+html{
+	scroll-behavior: smooth;
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+ul{
+	list-style: none;
+}
+.home {
+	height: 100vh;
+	width: 100%;
+}
+.home header{
+	background-color: #fff;
+	width: 100%;
+	height: 13vh;
+	display: flex;
+	justify-content: space-between;
+}
+.home header #logo{
+	margin: 20px 60px;
+}
+.home header #logo h1{
+	color: #000;
+	font-size: 45px;
+	font-family: 'Lobster', cursive;
+	letter-spacing: 2px;
+	font-weight: 500px;
+}
+.home header nav{
+	margin-top: 30px;
+}
+.home header nav #cross{
+	display: none;
+	transition: all .3s ease;
+}
+.home header nav #cross:hover{
+	transform: scale(1.3);
+	transition: all .3s ease;
+}
+.home header nav ul{
+	display: flex;
+}
+.home header nav ul li{
+	padding: 0 20px;
+}
+.home header nav ul li a{
+	color: #000;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 10px;
+	position: relative;
+}
+.home header nav ul li a::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: #000;
+	transition: all .5s ease;
+}
+.home header nav ul li a:hover:after{
+	width: 100%;
+	transition: all .5s ease;
+}
+.home header .toggler{
+	margin: 20px;
+	display: none;
+}
+.home header .toggler i{
+	font-size: 30px;
+	cursor: pointer;
+	transition: all .3s ease;	
+	display: block;
+}
+.home header .toggler i:hover{
+	transform: scale(1.3);
+	transition: all .3s ease;
+}
+
+
+/*banner*/
+.home .banner-text{
+	margin-top: 20%;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	/*width: max-content;*/
+	justify-content: center;
+	align-items: center;
+}
+.home .banner-text h1{
+	font-size: 55px;
+	font-family: 'Lobster';
+	/*background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));*/
+	letter-spacing: 3px;
+	padding: 20px;
+}
+.home .banner-text p{
+	/*background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));*/
+	/*width: 900px;*/
+	/*padding-bottom: 20px;*/
+
+}
+.home .banner-text a{
+	color: #000;
+	background-color: #fff;
+	padding: 10px 40px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 50px;
+	margin-top: 50px;
+	transition: color .2s ease; 
+}
+.home .banner-text a:hover{
+	background-color:  black;
+	color: #fff;
+	transition: color .2s ease; 
+}
+
+
+/*services section*/
+.service{
+	width: 100%;
+	background-color: #fff;
+}
+.service .main_content{
+	/*background-color: yellow;*/
+	width: 100%;
+	height: 25vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.service .main_content h1{
+	font-size: 45px;
+	font-family: 'Lobster';
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+}
+.service .main_content p{
+	font-family: sans-serif;
+	font-style: italic;
+	color: gray;
+}
+.service .cards{
+	width: 100%;
+	height: auto;
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://images.all-free-download.com/images/graphiclarge/fashion_sofa_hd_picture_167714.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	color: #fff;
+}
+.service .cards .card{
+	width: 250px;
+	padding: 30px 0;
+	cursor: pointer;
+	transition: all .5s ease;
+	/*background-color: #f1f1f1;*/
+}
+.service .cards .card i{
+	font-size: 10rem;
+	/*color: #000;*/
+}
+.service .cards .card:hover{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+	transition: all .5s ease;
+}
+
+/*Products section*/
+.product{
+	width: 100%;
+	/*height: 200vh;*/
+	/*background-color: gray;*/
+}
+.product .product_main_text{
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.product .product_main_text h1{
+	font-size: 50px;
+	font-family: 'Lobster';
+	letter-spacing: 1px;
+}
+.product .product_main_text p{
+	color: gray;
+}
+.product .product_cards{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 50px;
+	/*align-items: center;*/
+}
+.product .product_cards .products{
+	/*background-color: #f1f1f1;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items: center;
+	/*max-width: 488px;*/
+}
+.product .product_cards .products .lines a{
+	background-color: rgba(0, 89, 255);
+	padding: 10px 40px;
+	border-radius: 30px; 
+	color: #fff;
+	line-height: 100px;
+	transition: .5s ease;
+}
+.product .product_cards .products .lines a:hover{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), rgba(0, 89, 255);
+	transition: .5s ease;
+}
+/*testimonials section*/
+.testimonials{
+	width: 100%;
+	/*height: 100vh;*/
+	/*background-color: green;*/
+}
+.testimonials .testi_text{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 20vh;
+}
+.testimonials .testi_text h1{
+	font-family: 'Lobster';
+	font-size: 50px;
+	letter-spacing: 1px;
+}
+.testimonials .testi_text p{
+	color: gray;
+}
+.testimonials .reviews{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background: orange;
+	padding: 40px;
+}
+.testimonials .reviews .revw_card {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	border: 2px solid #000;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0 1px 30px 5px #000;
+	background-color: #fff;
+	margin-top: 10px;
+}
+.testimonials .reviews .revw_card .image{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid gray;
+}
+/*Contact section*/
+.contact{
+	width: 100%;
+	background-color: #000;
+}
+.contact footer{
+	width: 100%;
+	background-color: #000;
+	/*height: 30vh;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.contact footer .footerdivs{
+	width: 300px;
+	/*height: 200px;*/
+	padding: 30px;
+	/*background-color: yellow;*/
+}
+.contact footer .footerdivs h1{
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Lobster';
+	margin-top: 30px;
+}
+.contact footer .footerdivs a{
+	color: #f1f1f1;
+	font-size: 12px;
+	font-weight: 400;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	display: block;
+	margin-top: 10px;
+	/*text-align: left;*/
+}
+.contact footer .footerdivs a:hover{
+	color: orange;
+}
+.contact footer .footerdivs i{
+	color: #fff;
+	display: block;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.contact footer .footerdivs i:hover{
+	color: orange;
+}
+.contact .copyright h2{
+	color: #f1f1f1;
+	font-size: 10px;
+	padding-bottom: 30px;
+}

@@ -1,0 +1,86 @@
+@media only screen and (max-width: 1000px){
+	
+	.home header .toggler{
+		display: block;
+		/*z-index: 2;*/
+	}
+
+	.home header nav{
+		background-color: #f1f1f1;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 0;
+		height: 100%;
+		width: 0;
+		overflow: hidden;
+		z-index: 1;
+		transition: .5s ease;
+	}
+
+	.home header nav ul{
+		display: block;
+		margin-top: 100px;
+		/*width: 0;*/
+	}
+	.home header nav ul i#cross{
+		position: absolute;
+		display: block;
+		top: 0;
+		right: 0;
+		z-index: 2;
+		margin: 40px 85px;
+		font-size: 30px;
+		cursor: pointer;
+	}
+	.home header nav ul li{
+		display: block;
+		margin-top: 30px;
+	}
+	.home header nav ul li #bag{
+		font-size: 45px;
+	}
+	/*footer*/
+	.contact footer .footerdivs a{
+		display: inline-block;
+		padding: 0 10px;
+	}
+	.contact footer .footerdivs i{
+		display: inline-block;
+		padding: 0 10px;
+	}
+}
+/*/////////////////////////////////*/
+@media only screen and (max-width: 450px){
+	.home header #logo{
+		margin-left: 20px;
+	}
+	.home header #logo h1{
+		font-size: 32px;
+	}
+	.home .banner-text h1{
+		font-size: 30px;
+	}
+	.home .banner-text p{
+		font-size: 10px;
+	}
+	.home .banner-text a{
+		font-size: 15px;
+	}
+	.product .product_cards .products{
+		width: 300px;	
+	}
+	.product .product_cards .products img{
+		width: 300px;
+	}
+
+	/*footer*/
+	.contact footer .footerdivs a{
+		display: inline-block;
+		padding: 0 10px;
+	}
+	.contact footer .footerdivs i{
+		display: inline-block;
+		padding: 0 10px;
+	}
+}
